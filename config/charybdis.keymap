@@ -5,6 +5,7 @@
 #define BASE 0
 #define MOUSE 1
 #define NUMBER 2
+#define FUNCTION 3
 
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
@@ -143,6 +144,16 @@
         &trans   &kp LGUI &hml_s LALT N4 &hml_s LSHFT N5 &hml_s LCTRL N6 &none                  &none         &hmr_s RCTRL LEFT &hmr_s RSHFT DOWN &hmr_s RALT RIGHT &kp RGUI       &trans
         &trans   &none    &kp N1         &kp N2          &kp N3          &kp LC(MINUS)          &kp LC(EQUAL) &kp HOME          &trans            &kp END           &none          &trans
                                 &kp DOT         &kp N0          &kp SPACE              &trans        &none
+      >;
+    };
+
+    Fun {
+      display-name = "Function";
+      bindings = <
+        &trans    &kp LC(LA(DEL)) &kp F7 &kp F8 &kp F9 &kp F10          &none &none     &none     &none    &none      &trans        
+        &trans    &none           &kp F4 &kp F5 &kp F6 &kp F11          &none &kp LCTRL &kp LSHFT &kp LALT &kp LGUI   &trans     
+        &trans    &none           &kp F1 &kp F2 &kp F3 &kp F12          &none &none     &none     &none    &none      &trans
+                               &none  &none  &none            &none &none
       >;
     };
   };
