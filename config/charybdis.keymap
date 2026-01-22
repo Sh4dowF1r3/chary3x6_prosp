@@ -111,7 +111,7 @@
     };
   };
 
-  combos {
+combos {
     compatible = "zmk,combos";
     timeout-ms = <30>;
     require-prior-idle-ms = <250>;
@@ -121,19 +121,20 @@
       bindings = <&studio_unlock>;
     };
 
-  combo_h_letter {
-    key-positions = <16 17>; 
-    bindings = <&kp LBKT>; 
-  };
+    combo_h_letter {
+      key-positions = <16 17>;
+      bindings = <&kp LBKT>;
+    };
 
-  combo_delete_word {
-    key-positions = <26 27>;  
-    bindings = <&ctl &kp BSPC>;                 
-  };
+    combo_delete_word {
+      key-positions = <26 27>;
+      bindings = <&ctl &kp BSPC>;
+    };
 
-  combo_uwu_letter {
-    key-positions = <15 17>;      
-    bindings = <&kp RBKT>;                      
+    combo_uwu_letter {
+      key-positions = <15 17>;
+      bindings = <&kp RBKT>;
+    };
   };
 
   };
@@ -158,7 +159,7 @@
       display-name = "NMF";
       bindings = < 
         &kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4        &kp N5                 &kp N6     &kp N7   &kp N8     &kp N9     &kp N0      &trans
-        &kp С_PP   &kp С_PREV  &kp С_NEXT  &kp С_MUTE   &kp С_VOL_DN  &kp С_VOL_UP           &kp PSCRN  &kp DEL  &kp MINUS  &kp EQUAL  &kp K_APP   &kp CAPS
+        &kp C_PP   &kp C_PREV  &kp C_NEXT  &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP           &kp PSCRN  &kp DEL  &kp MINUS  &kp EQUAL  &kp K_APP   &kp CAPS
         &kp F1     &kp F2      &kp F3      &kp F4       &kp F5        &kp F6                 &kp F7     &kp F8   &kp F9     &kp F10    &kp F11     &kp F12
                                            &kp LALT  &trans   &ctrl_nav 2 LCTRL              &mo 2   &trans  
       >;
