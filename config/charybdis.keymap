@@ -142,7 +142,7 @@
       display-name = "NMF";
       bindings = < 
         &kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4        &kp N5                 &kp N6     &kp N7   &kp N8     &kp N9     &kp N0      &trans
-        &kp K_PP   &kp K_PREV  &kp K_NEXT  &kp K_MUTE   &kp K_VOL_DN  &kp K_VOL_UP           &kp PSCRN  &kp DEL  &kp MINUS  &kp EQUAL  &kp K_APP   &kp CAPS
+        &kp C_PP   &kp C_PREV  &kp C_NEXT  &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP           &kp PSCRN  &kp DEL  &kp MINUS  &kp EQUAL  &kp K_APP   &kp CAPS
         &kp F1     &kp F2      &kp F3      &kp F4       &kp F5        &kp F6                 &kp F7     &kp F8   &kp F9     &kp F10    &kp F11     &kp F12
                                                    &mkp MB1  &mkp MB2  &mkp MB3              &mo 2   &trans  
       >;
