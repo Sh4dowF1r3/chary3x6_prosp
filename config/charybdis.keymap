@@ -111,7 +111,7 @@
     };
   };
 
-  combos {
+combos {
     compatible = "zmk,combos";
     timeout-ms = <30>;
     require-prior-idle-ms = <250>;
@@ -128,7 +128,7 @@
 
     combo_delete_word {
       key-positions = <26 27>;
-      bindings = <&ctl &kp BSPC>;
+      bindings = <&kp LCTRL &kp BSPC>;
     };
 
     combo_uwu_letter {
@@ -136,7 +136,7 @@
       bindings = <&kp RBKT>;
     };
   };
-  
+
   chosen {
     zmk,physical-layout = &charybdis_6col_layout;
   };
