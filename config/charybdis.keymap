@@ -113,14 +113,30 @@
 
   combos {
     compatible = "zmk,combos";
-    timeout-ms = <20>;
+    timeout-ms = <30>;
     require-prior-idle-ms = <250>;
 
     combo_unlock {
       key-positions = <0 4>;
       bindings = <&studio_unlock>;
     };
+
+    combo_h_letter {
+      key-positions = <16 17>;
+      bindings = <&kp LBKT>;
+    };
+
+    combo_delete_word {
+      key-positions = <26 27>;
+      bindings = <&ctl &kp BSPC>;
+    };
+
+    combo_uwu_letter {
+      key-positions = <15 17>;
+      bindings = <&kp RBKT>;
+    };
   };
+  
   chosen {
     zmk,physical-layout = &charybdis_6col_layout;
   };
@@ -131,7 +147,7 @@
     Base {
       display-name = "Base";
       bindings = <
-        &kp ESCAPE  &kp Q    &kp W    &kp E    &kp R    &kp T                  &kp Y    &kp U    &kp I       &kp O    &kp P      &tog 3
+        &kp ESCAPE  &kp Q    &kp W    &kp E    &kp R    &kp T                    &kp Y    &kp U    &kp I       &kp O    &kp P      &tog 3
         &kp LSHFT   &kp A    &kp S    &kp D    &kp F    &kp G                  &kp H    &kp J    &kp K       &kp L    &kp SEMI   &kp SQT
         &kp TAB     &kp Z    &kp X    &kp C    &kp V    &kp B                  &kp N    &kp M    &kp COMMA   &kp DOT  &kp FSLH   &kp LGUI
                              &kp LALT   &lt 1 SPACE   &ctrl_nav 2 LCTRL        &kp BSPC     &mt RSHFT ENTER        
