@@ -123,13 +123,13 @@ combos {
     };
 
     combo_h_letter {
-      key-positions = <20 21>;
+      key-positions = <19 20>;
       bindings = <&kp LBKT>;
     };
 
     combo_delete_word {
       key-positions = <32 33>;
-      bindings = <&kp LCTRL &kp BSPC>;
+      bindings = <&kp RCTRL &kp BSPC>;
     };
 
     combo_uwu_letter {
@@ -178,10 +178,10 @@ combos {
     MOUSE {
       display-name = "MOUSE";
       bindings = < 
-        &kp ESCAPE   &none        &none       &none        &none         &mkp MB4         &none   &none   &none   &none   &none   &tog 0
-        &kp LSHFT    &none        &mkp MB1    &mkp MB3     &mkp MB2      &mkp MB5         &none   &none   &none   &none   &none   &none
-        &kp TAB      &kp K_UNDO   &kp K_CUT   &kp K_COPY   &kp K_PASTE   &kp DEL          &none   &none   &none   &none   &none   &kp LGUI
-                                              &kp LALT     &kp SPACE     &kp LCTRL        &none   &none                                                                     
+        &kp ESCAPE   &none           &none          none            &none               &mkp MB4         &none   &none   &none   &none   &none   &tog 0
+        &kp LSHFT    &none           &mkp MB1       mkp MB3         &mkp MB2            &mkp MB5         &none   &none   &none   &none   &none   &none
+        &kp TAB      &kp C_AC_UNDO   &kp C_AC_CUT   &kp C_AC_COPY   &kp C_AC_PASTE      &kp DEL          &none   &none   &none   &none   &none   &kp LGUI
+                                        &trans   &trans  &trans                         &none   &none                                                                     
       >;
     };
   };
@@ -191,7 +191,7 @@ combos {
 
 
 
-
+              
 
 
 
