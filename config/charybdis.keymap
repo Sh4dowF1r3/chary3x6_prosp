@@ -129,7 +129,7 @@ combos {
 
     combo_delete_word {
       key-positions = <32 33>;
-      bindings = <&kp RCTRL &kp BSPC>;
+      bindings = <&kp LCTRL &kp BSPC>;
     };
 
     combo_uwu_letter {
