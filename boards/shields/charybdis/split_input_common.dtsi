@@ -35,7 +35,9 @@
 
     move {
       layers = <BASE MOUSE>;
-      input-processors = <&auto_mouse_layer MOUSE 1000>;
+      input-processors = <
+      &zip_xy_transform (INPUT_TRANSFORM_ROTATE_45_CW)
+      &auto_mouse_layer MOUSE 1000>;
     };
   };
 
