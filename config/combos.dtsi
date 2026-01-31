@@ -191,14 +191,14 @@
             key-positions = <0 4>;
         };
 
-        bt_clr {
-            key-positions = <4 5>;
-            bindings = <&bt BT_CLR>;
-            layers = <NUMS>;
-        };
+        // bt_clr {
+        //     key-positions = <4 5>;
+        //     bindings = <&bt BT_CLR>;
+        //     layers = <NUMS>;
+        // };
     };
 
-    
+
         macros {
         copy: copy {
             compatible = "zmk,behavior-macro";
