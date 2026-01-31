@@ -105,8 +105,8 @@
       bindings = <&sk LSHIFT>, <&caps_word>;
       mods = <(MOD_LSFT)>;
     };
+  };
 };
-
 
   / {
     macros {
@@ -134,7 +134,7 @@
       bindings = <&macro &kp LCTRL &kp Z &macro_release>;
     };
   };
-    };
+};
 
 
 combos {
