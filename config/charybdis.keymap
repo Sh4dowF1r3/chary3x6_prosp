@@ -28,7 +28,7 @@
 
 #include "behaviors.dtsi"
 #include "combos.dtsi"
-
+/ {
 &sk {
   release-after-ms = <600>;
   quick-release;
@@ -52,11 +52,12 @@
   /delete-property/ ignore-modifiers;
 };
 
-  chosen {
+/ {
+    chosen {
     zmk,physical-layout = &charybdis_6col_layout;
   };
 
-/ {
+
   keymap {
     compatible = "zmk,keymap";
 
