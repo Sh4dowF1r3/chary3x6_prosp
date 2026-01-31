@@ -92,12 +92,12 @@
         <&kp>;
     };
 
-ctrl_dance: ctrl_dance {
-  compatible = "zmk,behavior-tap-dance";
-  #binding-cells = <0>;
-  tapping-term-ms = <200>;  
-  bindings = <&kp LCTRL>, <&mo 2>;  
-};
+    ctrl_dance: ctrl_dance {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;  
+      bindings = <&kp LCTRL>, <&mo 2>;  
+    };
 
     smart_shift: smart_shift {
       compatible = "zmk,behavior-mod-morph";
@@ -105,8 +105,12 @@ ctrl_dance: ctrl_dance {
       bindings = <&sk LSHIFT>, <&caps_word>;
       mods = <(MOD_LSFT)>;
     };
+};
 
-    copy: copy {
+
+  / {
+    macros {
+         copy: copy {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&macro &kp LCTRL &kp C &macro_release>;
@@ -130,6 +134,8 @@ ctrl_dance: ctrl_dance {
       bindings = <&macro &kp LCTRL &kp Z &macro_release>;
     };
   };
+    };
+
 
 combos {
     compatible = "zmk,combos";
