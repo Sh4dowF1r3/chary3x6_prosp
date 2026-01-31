@@ -35,6 +35,35 @@
   /delete-property/ ignore-modifiers;
 };
 
+  / {
+    macros {
+         copy: copy {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro &kp LCTRL &kp C &macro_release>;
+    };
+
+     paste: paste {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro &kp LCTRL &kp V &macro_release>;
+    };
+    
+     cut: cut {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro &kp LCTRL &kp X &macro_release>;
+    };
+    
+    undo: undo {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro &kp LCTRL &kp Z &macro_release>;
+    };
+  };
+};
+
+
 / {
   behaviors {
     hml: hml {
@@ -106,35 +135,6 @@
       mods = <(MOD_LSFT)>;
     };
   };
-};
-
-  / {
-    macros {
-         copy: copy {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&macro &kp LCTRL &kp C &macro_release>;
-    };
-
-     paste: paste {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&macro &kp LCTRL &kp V &macro_release>;
-    };
-    
-     cut: cut {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&macro &kp LCTRL &kp X &macro_release>;
-    };
-    
-    undo: undo {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&macro &kp LCTRL &kp Z &macro_release>;
-    };
-  };
-};
 
 
 combos {
