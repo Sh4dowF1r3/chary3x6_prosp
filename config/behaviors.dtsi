@@ -1,5 +1,25 @@
 / {
     behaviors {
+        lt: behavior_lt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "balanced";
+        };
+        
+        mt: behavior_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "balanced";
+        };
+        
+        ctrl_dance: ctrl_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;  
+            bindings = <&kp LCTRL>, <&mo 2>;  
+        };        
         // hm_l: homerow_mods_left {
         //     compatible = "zmk,behavior-hold-tap";
         //     #binding-cells = <2>;
