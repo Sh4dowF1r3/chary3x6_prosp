@@ -137,7 +137,6 @@ combos {
     };
   };
 
-  / {
     macros {
         copy: copy {
             compatible = "zmk,behavior-macro";
@@ -163,7 +162,6 @@ combos {
             bindings = <&kp LC(Z)>;
         };
     };
-};
 
 
   chosen {
