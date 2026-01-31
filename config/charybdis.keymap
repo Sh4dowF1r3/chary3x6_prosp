@@ -45,7 +45,7 @@
 };
 
 / {
-    chosen {ы
+    chosen {
     zmk,physical-layout = &charybdis_6col_layout;
   };
 
