@@ -27,12 +27,12 @@
     input-processors = <&zip_xy_scaler 4 5>;
 
     snipe {
-      layers = <SNIPE>;
+      layers = <NAVNUM>;
       input-processors = <&zip_xy_scaler 1 3>;
     };
 
     scroll {
-      layers = <SCROLL>;
+      layers = <NMF>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 7>, <&zip_xy_to_scroll_mapper>;
     };
   };
