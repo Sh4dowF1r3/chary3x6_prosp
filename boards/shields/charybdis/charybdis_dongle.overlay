@@ -1,8 +1,12 @@
 #include "charybdis.dtsi"
-#include "split_input_common.dtsi"
+#include "charybdis_ec11.dtsi"
+#include "split_input.dtsi"
+
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,sensors = &sensors;
+        zephyr,display = &oled;
     };
 
     mock_kscan: kscan_1 {
@@ -15,5 +19,30 @@
 
 &trackball_listener {
     status = "okay";
+};
+
+// INFO: uncomment for dual trackball
+// &trackball_left_listener {
+//     status = "okay";
+// };
+
+&pro_micro_i2c {
+    status = "okay";
+
+    oled: ssd1306@3c {
+        // compatible = "solomon,ssd1306fb";
+        compatible = "sinowealth,sh1106";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <2>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <63>;
+        segment-remap;
+        com-invdir;
+        inversion-on;
+        prechargep = <0x22>;
+    };
 };
 
