@@ -52,30 +52,30 @@
         };
 
         //INFO: Layer activation
-        combo_layer_scroll_l {
-            bindings = <&mo 4>;
-            key-positions = <21 22 23>;
-        };
+        // combo_layer_scroll_l {
+        //     bindings = <&mo 4>;
+        //     key-positions = <21 22 23>;
+        // };
 
-        combo_layer_snipe_l {
-            bindings = <&mo 5>;
-            key-positions = <20 21 22>;
-        };
+        // combo_layer_snipe_l {
+        //     bindings = <&mo 5>;
+        //     key-positions = <20 21 22>;
+        // };
 
-        combo_layer_scroll_r {
-            bindings = <&mo 4>;
-            key-positions = <26 27 28>;
-        };
+        // combo_layer_scroll_r {
+        //     bindings = <&mo 4>;
+        //     key-positions = <26 27 28>;
+        // };
 
-        combo_layer_snipe_r {
-            bindings = <&mo 5>;
-            key-positions = <27 28 29>;
-        };
+        // combo_layer_snipe_r {
+        //     bindings = <&mo 5>;
+        //     key-positions = <27 28 29>;
+        // };
 
-        combo_layer_auto {
-            bindings = <&mo 5>;
-            key-positions = <3 4>;
-        };
+        // combo_layer_auto {
+        //     bindings = <&mo 5>;
+        //     key-positions = <3 4>;
+        // };
 
         combo_layer_dan {
             bindings = <&mo 2>;

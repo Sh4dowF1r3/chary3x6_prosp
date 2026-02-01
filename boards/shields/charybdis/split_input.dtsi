@@ -35,6 +35,11 @@
       layers = <NMF>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 1>, <&zip_xy_to_scroll_mapper>;
     };
+
+        move {
+      layers = <BASE MOUSE>;
+      input-processors = <&auto_mouse_layer MOUSE 1000>;
+    };
   };
 
   trackball_left_listener: trackball_left_listener {

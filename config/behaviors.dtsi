@@ -14,12 +14,12 @@
             flavor = "balanced";
         };
 
-        // ctrl_dance: ctrl_dance {
-            // compatible = "zmk,behavior-tap-dance";
-            // #binding-cells = <0>;
-            // tapping-term-ms = <200>;  
-            // bindings = <&kp LCTRL>, <&mo 2>;  
-        // };  
+        ctrl_dance: ctrl_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;  
+            bindings = <&kp LCTRL>, <&mo 2>;  
+        };  
 
         // hm_l: homerow_mods_left {
         //     compatible = "zmk,behavior-hold-tap";
