@@ -1,18 +1,18 @@
 / {
     behaviors {
-        lt: behavior_lt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-            flavor = "balanced";
-        };
+        // lt: behavior_lt {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     bindings = <&kp>, <&kp>;
+        //     flavor = "balanced";
+        // };
         
-        mt: behavior_mt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-            flavor = "balanced";
-        };
+        // mt: behavior_mt {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     bindings = <&kp>, <&kp>;
+        //     flavor = "balanced";
+        // };
 
         ctrl_dance: behavior_ctrl_dance {
             compatible = "zmk,behavior-tap-dance";
