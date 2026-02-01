@@ -14,7 +14,7 @@
             flavor = "balanced";
         };
 
-        ctrl_dance: ctrl_dance {
+        ctrl_dance: behavior_ctrl_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;  
