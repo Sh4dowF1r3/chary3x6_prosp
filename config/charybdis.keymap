@@ -43,9 +43,10 @@
 };
 
 / {
-    chosen {
-    zmk,physical-layout = &charybdis_6col_layout;
-  };
+ 
+//    chosen {
+//    zmk,physical-layout = &charybdis_6col_layout;
+//  };
 
 
   keymap {
