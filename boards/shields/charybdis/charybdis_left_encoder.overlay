@@ -27,7 +27,7 @@
     chosen {
         zmk,kscan = &kscan_composite;
         zmk,sensors = &sensors;
-        zmk,matrix-transform = &five_column_transform_swapped;
+        zmk,matrix-transform = &charybdis_6col_layout;
     };
 
     kscan_composite: kscan_composite {
