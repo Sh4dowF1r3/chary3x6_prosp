@@ -223,6 +223,16 @@
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>;
         };
+        tabL: tabL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(TAB))>;
+        };
+        tabR: tabR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>;
+        };
     };
 };
 
